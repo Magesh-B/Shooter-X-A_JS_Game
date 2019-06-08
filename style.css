@@ -1,7 +1,31 @@
+body{
+    background-image: linear-gradient(black,grey);
+    overflow: hidden;
+}
+
 canvas {
     cursor: crosshair;
     display: block;
     left: 0;
     position: absolute;
     top: 0;
+}
+
+#checker
+{
+    color: aliceblue;
+}
+
+#pilot
+{
+    bottom: 0%;
+}
+
+#pilotCockPit
+{
+    bottom: 0%;
+    height: 30%;
+    position: fixed;
+    z-index: 9999;
+    cursor: no-drop;
 }
