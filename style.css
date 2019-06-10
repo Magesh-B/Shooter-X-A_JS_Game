@@ -11,6 +11,97 @@ canvas {
     top: 0;
 }
 
+.progressBar
+{
+    height: 8%;
+    width: 100%;
+    color: white;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+.column2 {
+    float: right;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container-fluid
+  {
+      z-index: 500;
+  }
+
+/*Enemy Aircraft Motion*/
+#enemy-1 {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+#enemy-2 {
+    -webkit-animation: mover 2.5s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}#enemy-3 {
+    -webkit-animation: mover 3s infinite  alternate;
+    animation: mover 3s infinite  alternate;
+}#enemy-4 {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}#enemy-5 {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}#enemy-6 {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+#enemy-2
+{
+    width: 35%;
+}
+
+#enemy-4
+{
+    width: 40%;
+}
+#enemy-3
+{
+    width: 30%;
+}
+#enemy-6
+{
+    width: 35%;
+}
+
+/*
+#enemyPlane1, #enemyPlane2, #enemyPlane3
+{
+    width: 33.3%;
+    float: left;
+    display: inline-block;
+    padding: 5px;
+}*/
+
 #checker
 {
     color: aliceblue;
