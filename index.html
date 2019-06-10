@@ -3,26 +3,70 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="animate.css" type="text/css">
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
 <meta charset="utf-8">
-<meta name="description" content="TEDxSriSairamIT">
-<meta name="application-name" content="TEDxSriSairamIT 2019">
+<meta name="description" content="Shooter-X, A JS game">
+<meta name="application-name" content="Shooter-X 2019">
 <meta name="author" content="Magesh B">
 <meta name="keywords" content="Shooter X, Shooting game, Js game">
-<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-<!--<script src="http://kerala.me/promo/lights/f.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="firing.js"></script>
 <script src="script.js"></script>
 </head>
 <body>
 
+<audio id="shooty" preload="auto">
+    <source src="shoot.mp3" type="audio/mp3">
+    <source src="shoot.wav" type="audio/wav">
+    <source src="shoot.ogg" type="audio/ogg">
+</audio>
+<!--Progress bar-->
+<div class="container-fluid">
+    <div class="progressBar">
+        
+    </div>
+</div>
+
+<!--Enemy Aircraft-->
+<!--Wave 1-->
+<div class="container">
+    <div class="row">
+    <div class="column">
+        <img src="img/enemy.png" onclick="shot()" class="img-responsive animate" id="enemy-1">
+    </div>
+    <div class="column">
+        <img src="img/enemy.png" class="img-responsive animate" id="enemy-2">
+    </div>
+    <div class="column">
+        <img src="img/enemy.png" class="img-responsive animate" id="enemy-3">
+    </div>
+    </div>
+</div>
+
+<!--Wave 2-->
+<div class="container-fluid">
+        <div class="row">
+        <div class="column2">
+            <img src="img/enemy.png" class="img-responsive animate" id="enemy-4">
+        </div>
+        <div class="column2">
+            <img src="img/enemy.png" class="img-responsive animate" id="enemy-5">
+        </div>
+        <div class="column2">
+            <img src="img/enemy.png" class="img-responsive animate" id="enemy-6">
+        </div>
+        </div>
+</div>
+
+
 <div id="checker">
     <h1 id="checker">Checky</h1>
 </div>
+<!--Pilot Cockpit-->
 <div class="container-fluid" id="pilot">
-    <img class="img-responsive" src="img/pilot.png" width="100%" height="50%" id="pilotCockPit">
+    <img class="img-responsive" src="img/pilot.png" title="Out Of Focus!" width="100%" height="50%" id="pilotCockPit">
 </div>
 </body>
 </html>
