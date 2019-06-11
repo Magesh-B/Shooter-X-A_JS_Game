@@ -1,72 +1,55 @@
 <html>
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css" type="text/css">
-<link rel="stylesheet" href="animate.css" type="text/css">
-<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
-<meta charset="utf-8">
-<meta name="description" content="Shooter-X, A JS game">
-<meta name="application-name" content="Shooter-X 2019">
-<meta name="author" content="Magesh B">
-<meta name="keywords" content="Shooter X, Shooting game, Js game">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="firing.js"></script>
-<script src="script.js"></script>
+    <title>TEDxSriSairamIT'19</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<audio id="shooty" preload="auto">
-    <source src="shoot.mp3" type="audio/mp3">
-    <source src="shoot.wav" type="audio/wav">
-    <source src="shoot.ogg" type="audio/ogg">
-</audio>
-<!--Progress bar-->
-<div class="container-fluid">
-    <div class="progressBar">
-        
-    </div>
-</div>
-
-<!--Enemy Aircraft-->
-<!--Wave 1-->
 <div class="container">
-    <div class="row">
-    <div class="column">
-        <img src="img/enemy.png" onclick="shot()" class="img-responsive animate" id="enemy-1">
-    </div>
-    <div class="column">
-        <img src="img/enemy.png" class="img-responsive animate" id="enemy-2">
-    </div>
-    <div class="column">
-        <img src="img/enemy.png" class="img-responsive animate" id="enemy-3">
-    </div>
-    </div>
-</div>
+        <h2>Shooter X</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About & Instruction</button>
+        <a href="game.html"><button type="button" class="btn btn-info btn-lg">Play Game</button></a>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Shooter X</h4>
+              </div>
+              <div class="modal-body">
+                <p>Shooter X is a simple game which unlocks the TEDxSriSairamIT official website for you!<br>
+                     About the Game:<br>
+                       1, You are the pilot of a warcraft, and you are chasing some hi-tech warplanes of opponents, unfortunately in their 
+                      region.<br>
+                      2, You need to destroy those warplanes infront of you, as soon as you can, from the opponent's ground base, you will be fired 
+                      simultaneously, your warcraft can only withstand for short span of time.<br>
+                      3, In order to increase the complexity, Your warcraft's aiming system and canon is malfunctioning and the opponent's warplanes 
+                      have the ability to undergo stealth mode for a while.<br>
+                      4, Your warcraft have infrared gun, which is more powerful, but a bit invisible.
+                      5, Finish the mission before your ship explode and make sure that you will never fire their nuclear detorrant!<br>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      
 
-<!--Wave 2-->
-<div class="container-fluid">
-        <div class="row">
-        <div class="column2">
-            <img src="img/enemy.png" class="img-responsive animate" id="enemy-4">
-        </div>
-        <div class="column2">
-            <img src="img/enemy.png" class="img-responsive animate" id="enemy-5">
-        </div>
-        <div class="column2">
-            <img src="img/enemy.png" class="img-responsive animate" id="enemy-6">
-        </div>
-        </div>
-</div>
 
 
-<div id="checker">
-    <h1 id="checker">Checky</h1>
-</div>
-<!--Pilot Cockpit-->
-<div class="container-fluid" id="pilot">
-    <img class="img-responsive" src="img/pilot.png" title="Out Of Focus!" width="100%" height="50%" id="pilotCockPit">
-</div>
 </body>
 </html>
