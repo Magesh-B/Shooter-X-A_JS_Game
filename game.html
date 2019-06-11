@@ -1,0 +1,91 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="animate.css" type="text/css">
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+<meta charset="utf-8">
+<meta name="description" content="Shooter-X, A JS game">
+<meta name="application-name" content="Shooter-X 2019">
+<meta name="author" content="Magesh B">
+<meta name="keywords" content="Shooter X, Shooting game, Js game">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<script src="firing.js"></script>-->
+<script src="script.js"></script>
+</head>
+<body id="whoNeedsCanvas" onclick="shooting()">
+<div id="whoNeedsCanvas"  onclick="shooting()">
+<!--
+<canvas id="unknown"></canvas>-->
+
+
+
+
+<!--Progress bar-->
+<div class="container-fluid">
+    <div class="progressBar">
+        <p id="progressText"></p>
+    </div>
+</div>
+<!--Enemy Aircraft-->
+<!--Wave 1-->
+<div class="container">
+    <div class="row">
+        
+    <!--<img src="img/grenade.png" id="grenade-2" class="img-responsive" width="3%" height="7%">-->
+    <div class="column animated" id="hide-1">
+        <img src="img/enemy.png" class="img-responsive" id="enemy-1">
+        <div id="progress-1"></div>
+    </div>
+    <!--<img src="img/grenade.png" id="grenade-1" class="img-responsive" width="3%" height="7%">-->
+    <div class="column animated" id="hide-2">
+        <img src="img/enemy.png" class="img-responsive" id="enemy-2">
+        <div id="progress-2"></div>
+    </div>
+    
+    <!--<img src="img/grenade.png" id="grenade-3" class="img-responsive" width="3%" height="7%">-->
+    <div class="column animated" id="hide-3">
+        <img src="img/enemy.png" class="img-responsive" id="enemy-3">
+        <div id="progress-3"></div>
+    </div>
+    <!--<img src="img/grenade.png" id="grenade-4" class="img-responsive" width="3%" height="7%">-->
+    
+    </div>
+</div>
+
+<!--Wave 2-->
+<div class="container-fluid">
+        <div class="row">
+        <div class="column2 animated" id="hide-4">
+            <img src="img/enemy.png" class="img-responsive" id="enemy-4">
+            <div id="progress-4"></div>
+        </div>
+        <!--<img src="img/grenade.png" id="grenade-5" class="img-responsive" width="3%" height="7%">-->
+        <div class="column2 animated" id="hide-5">
+            <img src="img/enemy.png" class="img-responsive" id="enemy-5">
+            <div id="progress-5"></div>
+        </div>
+        <div class="column2 animated" id="hide-6">
+            <img src="img/enemy.png" class="img-responsive" id="enemy-6">
+            <div id="progress-6"></div>
+        </div>
+        </div>
+</div>
+<!--Pilot Cockpit-->
+<div class="container-fluid" id="pilot">
+        <div id="airThreatGraph">
+        <p id="head-part"><b>Progress Representor</b></p>
+            <p id="fate">Hits: </p><p id='hitsMade'>0</p>
+            <p id="fate">Accurate Hits: </p><p id='successHits'>0</p><br>
+            <p id="fate">Success Rate: </p><p id="avgRate">0</p> %
+            <h2 id="last">Health Status</h2>
+            <div id="progress-health"></div>
+        </div>
+        <img class="img-responsive" src="img/pilot.png" title="Out Of Focus!" width="100%" height="35%" id="pilotCockPit">
+</div>
+</div>
+</body>
+</html>
